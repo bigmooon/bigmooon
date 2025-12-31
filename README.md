@@ -47,7 +47,6 @@
           <img alt="Expo" src="https://img.shields.io/badge/Expo-000?logo=expo&style=flat-square">
         </td>
         <td>
-          <img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=fff&style=flat-square">
           <img alt="Express" src="https://img.shields.io/badge/Express-000?logo=express&style=flat-square">
         </td>
       </tr>
