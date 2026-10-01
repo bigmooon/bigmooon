@@ -9,7 +9,7 @@
     <b><a href="https://github.com/bigmooon" style="color:#9B59B6;">Junghee Im</a></b>
   </samp>
   <br/>
-  <samp>Web &amp; LLM Engineer & Web Developer based in Korea</samp>
+  <samp>Web &amp; LLM Engineer based in Korea</samp>
 </h3>
 
 <p align="center">
