@@ -1,12 +1,9 @@
 <p align="center">
-  <img src="https://github.com/bigmooon/bigmooon/blob/main/src/header.png?raw=true" alt="Junghee Im header banner" />
+  <img src="https://github.com/bigmooon/bigmooon/blob/main/src/header.png?raw=true" alt="Junghee Im — LLM Application Engineer" />
 </p>
 
-<h1 align="center">임정희 | LLM Application Engineer</h1>
-
 <p align="center">
-  아이디어를 실제로 사용할 수 있는 웹·앱으로 만드는 개발자입니다.<br/>
-  화면과 서버, AI 기능이 자연스럽게 이어지는 제품을 고민합니다.
+  화면과 서버, AI 기능을 연결해 실제로 사용할 수 있는 웹·앱을 만듭니다.
 </p>
 
 <p align="center">
@@ -17,44 +14,49 @@
 
 ## About
 
+- 웹·앱의 사용자 흐름부터 백엔드와 AI 기능까지 하나의 제품으로 연결합니다.
 - LangGraph·LangChain 기반 에이전트 워크플로와 RAG 시스템을 설계합니다.
-- LLM 출력을 스키마, 골든셋, 회귀 테스트로 검증하는 과정에 관심이 많습니다.
-- Python 백엔드와 AI 서버를 연결하고 Docker·GitHub Actions 기반 배포 환경을 구성합니다.
-- 기능 구현보다 먼저 문제 정의, 실패 조건, 평가 기준을 명확히 만드는 방식을 선호합니다.
+- 스키마, 골든셋, 회귀 테스트와 배포 자동화를 통해 결과를 확인하고 개선합니다.
 
 ## Featured Projects
 
 ### [AIGO-V2](https://github.com/bigmooon/aigo-youth) — 근거 제시형 임대차 계약서 분석
 
-법률 Q&A 챗봇을 계약서 전체를 먼저 검사하는 evidence-first 탐지 시스템으로 개인 재설계했습니다.
+- **문제:** 질문에만 답하는 법률 챗봇은 사용자가 놓친 위험 조항을 먼저 발견하기 어렵습니다.
+- **역할:** 계약서 전체를 검사하는 evidence-first 탐지 흐름을 개인 프로젝트로 재설계하고 구현했습니다.
+- **결과:** 조항 분해부터 법령·판례·표준계약서 검색, 근거 식별자 제시까지 연결하고 골든셋 기반 CI 회귀 테스트를 구성했습니다.
+- **기술:** `Python` `LangGraph` `RAG` `Qdrant` `Streamlit` `GitHub Actions`
 
-- 계약서 조항 분해 → 법령·판례·표준계약서 근거 검색 → 발견 유형 리포트
-- 주관적인 위험 등급 대신 검증 가능한 근거와 식별자를 제시하도록 출력 책임 범위 설계
-- 골든셋 기반 자동 평가와 CI 회귀 테스트 구조 도입
-- `Python` `LangGraph` `RAG` `Qdrant` `Streamlit` `GitHub Actions`
+---
 
 ### 몽글마을 — AI 캐릭터와 함께하는 To-do Gamification
 
-애착인형 사진으로 생성한 AI 캐릭터가 자연어 목표를 실행 가능한 할 일과 퀘스트로 바꾸고, 완료 결과를 피드와 마을 성장으로 연결하는 팀 프로젝트입니다.
-
-- **담당:** 시스템 아키텍처 설계·문서화, Django ↔ FastAPI AI 서버 연동 구조 및 배포 흐름 설계
-- **AI 흐름:** 캐릭터 생성 · TODO 분해 · 퀘스트 생성 · 피드 생성 에이전트
-- **내부 모델 평가:** TODO 분해 5/5, JSON 파싱 5/5, 이미지 생성 19/20, 평균 SSIM 0.8378
-- **시스템 검증:** 31개 시나리오, 295개 세부 항목 모두 통과
-- `Django` `FastAPI` `LangChain` `Qwen2.5-7B` `SDXL + LoRA` `RunPod` `AWS` `Docker`
+- **문제:** 막연한 목표를 구체적인 행동으로 옮기고 꾸준히 이어갈 동기가 필요합니다.
+- **역할:** 시스템 아키텍처를 설계·문서화하고 Django와 FastAPI AI 서버의 연동 및 배포 흐름을 설계했습니다.
+- **결과:** 캐릭터 생성, TODO 분해, 퀘스트·피드 생성 흐름을 연결했으며 내부 시스템 검증 31개 시나리오·295개 세부 항목을 통과했습니다.
+- **기술:** `Django` `FastAPI` `LangChain` `Qwen2.5-7B` `SDXL + LoRA` `RunPod` `AWS` `Docker`
 
 [AI repository](https://github.com/bigmooon/mongle-ai) · [Backend repository](https://github.com/bigmooon/mongle-server) · [Team organization](https://github.com/mong-studio)
 
-> 수치는 팀 산출물의 제한된 내부 테스트셋 결과이며, 실제 사용자 환경의 성능을 의미하지 않습니다.
+<details>
+<summary>내부 평가 결과와 해석 범위</summary>
+
+- TODO 분해 5/5, JSON 파싱 5/5
+- 이미지 생성 19/20, 평균 SSIM 0.8378
+- 시스템 검증 31개 시나리오, 295개 세부 항목 통과
+
+위 수치는 팀 산출물의 제한된 내부 테스트셋 결과이며 실제 사용자 환경의 성능을 의미하지 않습니다.
+
+</details>
+
+---
 
 ### [Love Imbalance Detector](https://github.com/bigmooon/love-imbalance-detector) — 카카오톡 대화 기반 관계 지표 분석
 
-1:1 카카오톡 대화를 분석해 대화 지배성과 관계 의존도를 설명 가능한 지표로 시각화하는 개인 프로젝트입니다.
-
-- KLUE-BERT 감정 분류와 KR-SBERT 문장 임베딩을 결합한 한국어 대화 분석
-- 선톡, 답장 시간, 연속 메시지, 감정 비대칭, QA 유사도를 분리해 계산
-- 대화 세션 분리부터 가중 지표 계산, Plotly 시각화까지 하나의 Streamlit 흐름으로 구현
-- `Python` `Hugging Face` `Pandas` `Plotly` `Streamlit`
+- **문제:** 대화 관계의 불균형은 단순 메시지 수만으로 설명하기 어렵습니다.
+- **역할:** 데이터 전처리와 세션 분리부터 감정·응답·의존도 지표 계산, 시각화까지 전체 분석 흐름을 구현했습니다.
+- **결과:** KLUE-BERT와 KR-SBERT를 결합해 선톡, 답장 시간, 감정 비대칭, QA 유사도를 분리하고 설명 가능한 지표로 시각화했습니다.
+- **기술:** `Python` `Hugging Face` `Pandas` `Plotly` `Streamlit`
 
 ## Engineering Focus
 
@@ -82,10 +84,8 @@
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white)
 ![RunPod](https://img.shields.io/badge/RunPod-673DE6?style=flat-square&logoColor=white)
 
-## What I value
+---
 
-```text
-Problem definition → measurable acceptance criteria → implementation → evaluation → iteration
-```
-
-기능을 구현하는 데서 멈추지 않고, 사용 흐름과 결과를 확인하며 끝까지 다듬습니다.
+<p align="center">
+  기능을 구현하는 데서 멈추지 않고, 사용 흐름과 결과를 확인하며 끝까지 다듬습니다.
+</p>
